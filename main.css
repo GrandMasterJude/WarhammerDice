@@ -1,0 +1,23 @@
+.dice {
+    display: flex;
+}
+.fractions {
+    /* display: flex; */
+    margin: 1rem;
+}
+
+select {
+    display: block;
+    margin: 2rem;
+}
+
+label {
+    display: block;
+}
+
+.totalFractionP {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1rem;
+    color: crimson;
+}

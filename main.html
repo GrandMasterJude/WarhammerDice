@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Warhammer Fantasy Battle Dice Statistics</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h2>Dice</h2>
+        <div class="dice">
+            <label for="ToHit">To Hit</label>
+            <select name="ToHit" id="toHit" class="dropdown" onchange="DoMath()">
+                <option value="1">6+</option>
+                <option value="2">5+</option>
+                <option value="3">4+</option>
+                <option value="4">3+</option>
+                <option value="5">2+</option>
+                <option value="6">1+</option>
+            </select>
+            <p>To Wound</p>
+            <select name="ToWound" id="toWound" class="dropdown" onchange="DoMath()">
+                <option value="1">6+</option>
+                <option value="2">5+</option>
+                <option value="3">4+</option>
+                <option value="4">3+</option>
+                <option value="5">2+</option>
+                <option value="6">1+</option>
+            </select> 
+            <p>Armor Save</p>
+            <select name="toASave" id="toASave" class="dropdown" onchange="DoMath()">
+                <option value="None">None</option>
+                <option value="5">6+</option>
+                <option value="4">5+</option>
+                <option value="3">4+</option>
+                <option value="2">3+</option>
+                <option value="1">2+</option>
+                <option value="0">1+</option>
+            </select> 
+            <p>Ward Save</p>
+            <select name="toWSave" id="toWSave" class="dropdown" onchange="DoMath()">
+                <option value="None">None</option>
+                <option value="5">6+</option>
+                <option value="4">5+</option>
+                <option value="3">4+</option>
+                <option value="2">3+</option>
+                <option value="1">2+</option>
+                <option value="0">1+</option>
+            </select> 
+            <div>
+                <p>Total</p>
+                <p id="total"></p>
+            </div>
+        </div>
+        <div class="fractions">
+            <p>Learn to Multiply These Fractions in Your Head</p>
+            <label for="hitFractionP">To Hit</label>
+            <p id="hitFractionP"></p>
+            <label for="woundFractionP">To Wound</label>
+            <p id="woundFractionP"></p>
+            <label for="aSaveFractionP">Armor Save</label>
+            <p id="aSaveFractionP"></p>
+            <label for="wSaveFractionP">Ward Save</label>
+            <p id="wSaveFractionP"></p>
+            <label for="totalFractionP">Total</label>
+            <p id="totalFractionP" class="totalFractionP"></p>
+        </div>
+        <div>
+            <p>*Since a roll of a 1 always fails you will never actually hit or wound on a 1+, but you can still select it to see what the odds are.</p>
+        </div>
+        <div>
+            \<label for="rerollMissedHits">Reroll Missed Hits</label>
+            <input type="checkbox" id="rerollMissedHits" data-rerollMissedHits onclick="DoMath()"/>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
