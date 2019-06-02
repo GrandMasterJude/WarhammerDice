@@ -1,9 +1,17 @@
+body {
+    text-align: center;
+}
+
 .dice {
     display: flex;
 }
 .fractions {
-    /* display: flex; */
+    display: flex;
     margin: 1rem;
+}
+
+.fractions div {
+    margin: 2rem;
 }
 
 select {
@@ -13,6 +21,7 @@ select {
 
 label {
     display: block;
+    text-align: center;
 }
 
 .totalFractionP {
