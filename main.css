@@ -4,14 +4,27 @@ body {
 
 .dice {
     display: flex;
+    justify-content: space-around;
 }
 .fractions {
     display: flex;
     margin: 1rem;
+    justify-content: space-around;
 }
 
 .fractions div {
     margin: 2rem;
+}
+
+.options {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+input {    
+    display: block;
+    margin: 1rem;
 }
 
 select {

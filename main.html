@@ -96,18 +96,30 @@
         <div>
             <p>*Since a roll of a 1 always fails you will never actually hit or wound on a 1+, but you can still select it to see what the odds are.</p>
         </div>
-        <div>
-            <label for="rerollMissedHits">Reroll Missed Hits</label>
-            <input type="checkbox" id="rerollMissedHits" data-rerollMissedHits onclick="DoMath()"/>
+        <div class="options">
+            <div>
+                <p>Rerolls</p>
+                <label for="rerollMissedHits">Reroll Missed Hits</label>
+                <input type="checkbox" id="rerollMissedHits" data-rerollMissedHits onclick="DoMath()"/>
+                <label for="rerollMissedWounds">Reroll Missed Wounds</label>
+                <input type="checkbox" id="rerollMissedWounds" data-rerollMissedWounds onclick="DoMath()"/>
+                <label for="rerollOnestoHit">Reroll 1s to Hit</label>
+                <input type="checkbox" id="rerollOnestoHit" data-rerollOnestoHit onclick="DoMath()"/>
+                <label for="rerollOnestoWound">Reroll 1s to Wound</label>
+                <input type="checkbox" id="rerollOnestoWound" data-rerollOnestoWound onclick="DoMath()"/>
+            </div>
+            <div>
+                <label for="poisonedAttacks">Poisoned Attacks</label>
+                <input type="checkbox" id="poisonedAttacks" data-poisonedAttacks onclick="DoMath()"/>
+            </div>
+            <div>
+                <label for="killingBlow">Killing Blow</label>
+                <input type="checkbox" id="killingBlow" data-killingBlow onclick="DoMath()"/>
+                <select name="killingBlowNumber" id="killingBlowNumber" class="dropdown" onchange="DoMath()">
+                    <option value="6+">6+</option>
+                    <option value="5+">5+</option>
+            </div>
         </div>
-
-
-
-
-
-
-
-
 
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
